@@ -17,7 +17,7 @@ servers:
 # Set ssl: false if using something like Cloudflare to terminate SSL (but keep host!).
 proxy:
   ssl: true
-  host: sikadev.imlikeu.com
+  host: demo.sikadev.com
 
 # Credentials for your image host.
 registry:
@@ -33,6 +33,7 @@ registry:
 env:
   secret:
     - RAILS_MASTER_KEY
+    - KAMAL_REGISTRY_PASSWORD
   clear:
     # Run the Solid Queue Supervisor inside the web server's Puma process to do jobs.
     # When you start using multiple servers, you should split out job processing to a dedicated machine.
